@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <input type="text" id="login" />
+    <input type="pssword" id="password" />
+    <button onclick="login()">Button</button>
+
+    <script>
+        const login = () => {
+            const login = document.getElementById("login").value;
+            const password = document.getElementById("password").value;
+            
+            if(login === "a" && password === "a1") {
+                window.location.href = "/";
+                localStorage.setItem('isLoggedIn', 'true');
+            } else {
+                alert("ERROR");
+            }
+        }
+    </script>
+</body>
+</html>

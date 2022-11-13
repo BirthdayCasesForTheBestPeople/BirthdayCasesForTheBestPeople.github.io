@@ -1,3 +1,13 @@
+const isLoggedIn = localStorage.getItem('isLoggedIn');
+if(isLoggedIn !== "true") {
+    window.location.href = "/login.html";
+}
+
+const logout = () => {
+    localStorage.removeItem('isLoggedIn');
+    window.location.href = "/login.html";
+}
+
 const presentList = [
     {
         name: "Блендер",
@@ -40,8 +50,6 @@ const presentList = [
         img: "./img/tosters.jpg"
     }
 ]
-
-console.log("sdfsd")
 
 const list = document.getElementById("roller1");
 for(let i = 0; i < presentList.length; i++){
