@@ -1,5 +1,5 @@
 const isLoggedIn = localStorage.getItem('isLoggedIn');
-if(isLoggedIn !== "true") {
+if(isLoggedIn && isLoggedIn !== "true") {
     window.location.href = "/login.html";
 }
 
