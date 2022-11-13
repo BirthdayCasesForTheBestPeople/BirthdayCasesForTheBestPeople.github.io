@@ -12,6 +12,11 @@
     <button onclick="login()">Button</button>
 
     <script>
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        if(isLoggedIn === "true") {
+            window.location.href = "/";
+        }
+        
         const login = () => {
             const login = document.getElementById("login").value;
             const password = document.getElementById("password").value;
