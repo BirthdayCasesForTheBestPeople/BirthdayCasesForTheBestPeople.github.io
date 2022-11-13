@@ -1,0 +1,56 @@
+h1 {
+    color: red;
+}
+
+.roller-wrapper {
+    width: 700px;
+    height: 110px;
+    margin: 0 auto;
+    background: #dbdbdb;
+    overflow: hidden;
+    position: relative;
+}
+
+.roller-wrapper::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 140px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    top: 0
+}
+
+.roller {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -90px;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.roll-animation1 {
+    animation-name: roll1;
+}
+
+@keyframes roll1 {
+    from {left: -90px;}
+    to {left: -6107px;}
+}
+
+
+
+.roller-element {
+    width: 140px;
+    height: 100px;
+    background: white;
+    margin-right: 10px;
+    flex-shrink: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
