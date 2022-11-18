@@ -31,11 +31,11 @@
             const login = document.getElementById("login").value;
             const password = document.getElementById("password").value;
             
-            if(login.toLowerCase() === "кигирда" && password.toLowerCase() === "квестівна") {
+            if(login.trim().toLowerCase() === "кигирда" && password.trim().toLowerCase() === "квестівна") {
                 window.location.href = "/";
                 localStorage.setItem('isLoggedIn', 'true');
             } else {
-                alert("ERROR");
+                alert("Не вірно, спробуй ще раз");
             }
         }
     </script>
