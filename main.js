@@ -8,46 +8,54 @@ const logout = () => {
     window.location.href = "/login.html";
 }
 
+const openCase = id => {
+    console.log("case opened", id);
+
+    if(id === 1) {
+        window.location.href = "/cases/lot31253411.html"
+    }
+}
+
 const presentList = [
     {
         name: "Блендер",
-        img: "./img/blenders.jpg"
+        img: "../img/blenders.jpg"
     },
     {
         name: "Хлібопічка",
-        img: "./img/breadoven.jpg"
+        img: "../img/breadoven.jpg"
     },
     {
         name: "Кавоварка",
-        img: "./img/coffee.jpg"
+        img: "../img/coffee.jpg"
     },
     {
         name: "Гриль",
-        img: "./img/grill.jpg"
+        img: "../img/grill.jpg"
     },
     {
         name: "Соковижималка",
-        img: "./img/juice.jpg"
+        img: "../img/juice.jpg"
     },
     {
         name: "Чайник",
-        img: "./img/kittels.jpg"
+        img: "../img/kittels.jpg"
     },
     {
         name: "Мікрохвильовка",
-        img: "./img/microwave.jpg"
+        img: "../img/microwave.jpg"
     },
     {
         name: "Міксeh",
-        img: "./img/mixers.jpg"
+        img: "../img/mixers.jpg"
     },
     {
         name: "Мультиварка",
-        img: "./img/multi.jpg"
+        img: "../img/multi.jpg"
     },
     {
         name: "Тосер",
-        img: "./img/tosters.jpg"
+        img: "../img/tosters.jpg"
     }
 ]
 
