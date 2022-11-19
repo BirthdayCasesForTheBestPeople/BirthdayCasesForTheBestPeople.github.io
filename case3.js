@@ -7,19 +7,19 @@ const presentList = [
     },
     {
         name: "2",
-        img: "../img/case3/og.jpg"
-    },
-    {
-        name: "3",
         img: "../img/case3/versh.jpg"
     },
     {
-        name: "4",
+        name: "3",
         img: "../img/case3/ff.jpg"
     },
     {
-        name: "5",
+        name: "4",
         img: "../img/case3/main.jpg"
+    },
+    {
+        name: "5",
+        img: "../img/case3/og.jpg"
     },
     {
         name: "6",
@@ -51,15 +51,17 @@ const spin = () => {
     document.getElementById("spin").style.display = "none";
     
     setTimeout(() => {
-        document.getElementsByClassName('roller-element')[67].classList.add("win");
+        document.getElementsByClassName('roller-element')[66].classList.add("win");
         localStorage.setItem('case3', 'true');
+        document.getElementById("getPrz").style.display = "block";
     }, 10500);
 }
 
 const isWin = localStorage.getItem('case3');
 
 if(isWin && isWin === "true") {
-    document.getElementsByClassName('roller-element')[67].classList.add("win");
-    document.getElementById('roller1').style.left = "-7237px"
+    document.getElementsByClassName('roller-element')[66].classList.add("win");
+    document.getElementById('roller1').style.left = "-7137px"
     document.getElementById('spin').style.display = "none"
+    document.getElementById("getPrz").style.display = "block";
 }
