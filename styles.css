@@ -110,11 +110,28 @@ h1 {
     animation-name: roll1;
 }
 
+.roll-animation2 {
+    animation-name: roll2;
+}
+
+.roll-animation3 {
+    animation-name: roll2;
+}
+
 @keyframes roll1 {
     from {left: -50px;}
     to {left: -7197px;}
 }
 
+@keyframes roll2 {
+    from {left: -50px;}
+    to {left: -7267px;}
+}
+
+@keyframes roll3 {
+    from {left: -50px;}
+    to {left: -7237px;}
+}
 
 
 .roller-element {
