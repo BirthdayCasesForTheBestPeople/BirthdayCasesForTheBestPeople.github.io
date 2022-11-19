@@ -2,32 +2,32 @@ console.log("case 1");
 
 const presentList = [
     {
-        name: "Блендер",
-        img: "../img/blenders.jpg"
+        name: "1",
+        img: "../img/case1/mono.jpg"
     },
     {
-        name: "Хлібопічка",
-        img: "../img/breadoven.jpg"
+        name: "2",
+        img: "../img/case1/fb.jpg"
     },
     {
-        name: "Кавоварка",
-        img: "../img/coffee.jpg"
+        name: "3",
+        img: "../img/case1/domino.jpg"
     },
     {
-        name: "Гриль",
-        img: "../img/grill.jpg"
+        name: "4",
+        img: "../img/case1/catan.jpg"
     },
     {
-        name: "Соковижималка",
-        img: "../img/juice.jpg"
+        name: "5",
+        img: "../img/case1/card.jpg"
     },
     {
-        name: "Чайник",
-        img: "../img/kittels.jpg"
+        name: "6",
+        img: "../img/case1/jenga.jpg"
     },
     {
-        name: "Мікрохвильовка",
-        img: "../img/microwave.jpg"
+        name: "7",
+        img: "../img/case1/geom.jpg"
     },
 ]
 
