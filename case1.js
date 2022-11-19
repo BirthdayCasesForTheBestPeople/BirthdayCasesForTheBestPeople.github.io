@@ -29,22 +29,10 @@ const presentList = [
         name: "Мікрохвильовка",
         img: "../img/microwave.jpg"
     },
-    {
-        name: "Міксeh",
-        img: "../img/mixers.jpg"
-    },
-    {
-        name: "Мультиварка",
-        img: "../img/multi.jpg"
-    },
-    {
-        name: "Тосер",
-        img: "../img/tosters.jpg"
-    }
 ]
 
 const rollerEl = document.getElementById("roller1");
-for(let q = 0; q < 5; q++) {
+for(let q = 0; q < 10; q++) {
     for(let i = 0; i < presentList.length; i++){
         rollerEl.innerHTML += `<div class="roller-element" style="background-image: url(${presentList[i].img})"></div>`;
     }
@@ -56,10 +44,22 @@ for(let i = 0; i < presentList.length; i++){
 }
 
 
-
-
-
 const spin = () => {
     console.log("test");
+    
     rollerEl.classList.add("roll-animation1");
+    document.getElementById("spin").style.display = "none";
+    
+    setTimeout(() => {
+        document.getElementsByClassName('roller-element')[67].classList.add("win");
+        localStorage.setItem('case1', 'true');
+    }, 10500);
+}
+
+const isWin = localStorage.getItem('case1');
+
+if(isWin && isWin === "true") {
+    document.getElementsByClassName('roller-element')[67].classList.add("win");
+    document.getElementById('roller1').style.left = "-7197px"
+    document.getElementById('spin').style.display = "none"
 }

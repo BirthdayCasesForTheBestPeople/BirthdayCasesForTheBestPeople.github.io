@@ -100,7 +100,7 @@ h1 {
     display: flex;
     align-items: center;
     position: relative;
-    left: -60px;
+    left: -50px;
     animation-duration: 10s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
@@ -111,8 +111,8 @@ h1 {
 }
 
 @keyframes roll1 {
-    from {left: -60px;}
-    to {left: -4107px;}
+    from {left: -50px;}
+    to {left: -7197px;}
 }
 
 
@@ -126,6 +126,13 @@ h1 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    border: 10px solid transparent;
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+.roller-element.win {
+    border: 10px solid green;
 }
 
 .profile-wrapper {
