@@ -45,15 +45,30 @@ const openCase = id => {
     }
 
     if(id === 2) {
-        window.location.href = "/cases/lot39255429.html"
+        const val = prompt("Введіть ключ");
+        if(val.toLowerCase() === "галатська вежа") {
+            window.location.href = "/cases/lot39255429.html"
+        } else {
+            alert("Не вірно");
+        }
     }
 
     if(id === 3) {
-        window.location.href = "/cases/lot99123434.html"
+        const val = prompt("Введіть ключ");
+        if(val.toLowerCase() === "житомир") {
+            window.location.href = "/cases/lot99123434.html"
+        } else {
+            alert("Не вірно");
+        }
     }
 
     if(id === 4) {
-        window.location.href = "/cases/lot99911541.html"
+        const val = prompt("Введіть ключ");
+        if(val.toLowerCase() === "червоний") {
+            window.location.href = "/cases/lot99911541.html"
+        } else {
+            alert("Не вірно");
+        }
     }
 }
 
