@@ -1,33 +1,33 @@
-console.log("case 2");
+console.log("case 3");
 
 const presentList = [
     {
         name: "1",
-        img: "../img/case2/lol.jpg"
+        img: "../img/case4/gas.jpg"
     },
     {
         name: "2",
-        img: "../img/case2/termo.avif"
+        img: "../img/case4/hol.jpg"
     },
     {
         name: "3",
-        img: "../img/case2/main.jpg"
+        img: "../img/case4/main.jpg"
     },
     {
         name: "4",
-        img: "../img/case2/plate.jpg"
+        img: "../img/case4/coffee.jpg"
     },
     {
         name: "5",
-        img: "../img/case2/loz.avif"
+        img: "../img/case4/ble.jpg"
     },
     {
         name: "6",
-        img: "../img/case2/pp.avif"
+        img: "../img/case4/sam.jpg"
     },
     {
         name: "7",
-        img: "../img/case2/tee.avif"
+        img: "../img/case4/dril.jpg"
     },
 ]
 
@@ -52,11 +52,11 @@ const spin = () => {
     
     setTimeout(() => {
         document.getElementsByClassName('roller-element')[65].classList.add("win");
-        localStorage.setItem('case2', 'true');
+        localStorage.setItem('case4', 'true');
     }, 10500);
 }
 
-const isWin = localStorage.getItem('case2');
+const isWin = localStorage.getItem('case4');
 
 if(isWin && isWin === "true") {
     document.getElementsByClassName('roller-element')[67].classList.add("win");

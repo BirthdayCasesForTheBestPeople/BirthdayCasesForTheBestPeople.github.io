@@ -24,7 +24,7 @@ const openCase = id => {
     }
 
     if(id === 4) {
-        window.location.href = "/cases/"
+        window.location.href = "/cases/lot99911541.html"
     }
 }
 
