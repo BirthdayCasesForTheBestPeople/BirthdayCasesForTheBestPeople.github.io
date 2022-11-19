@@ -53,7 +53,7 @@ const spin = () => {
     setTimeout(() => {
         document.getElementsByClassName('roller-element')[65].classList.add("win");
         localStorage.setItem('case2', 'true');
-        document.getElementById("getPrz").classList.remove = "hide";
+        document.getElementById("getPrz").style.display = "block";
     }, 10500);
 }
 
@@ -63,5 +63,5 @@ if(isWin && isWin === "true") {
     document.getElementsByClassName('roller-element')[67].classList.add("win");
     document.getElementById('roller1').style.left = "-7020px"
     document.getElementById('spin').style.display = "none"
-    document.getElementById("getPrz").classList.remove = "hide";
+    document.getElementById("getPrz").style.display = "block";
 }
